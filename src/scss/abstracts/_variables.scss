@@ -35,10 +35,10 @@ $color: (
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-	base: '"Lato", sans-serif', // font-family(base)
-	heading: '"PT Serif", serif', // font-family(heading)
-	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
-	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
+	base: 'Inter, sans-serif', // font-family(base)
+	heading: 'Inter, serif', // font-family(heading)
+	code: 'Inter, sans-serif', // font-family(code)
+	pre: 'Inter, sans-serif' // font-family(pre)
 );
 
 $font__sizes: (

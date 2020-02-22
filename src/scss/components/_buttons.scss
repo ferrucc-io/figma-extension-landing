@@ -8,7 +8,6 @@
     }
     @include font-weight(bold);
     line-height: 16px;
-    text-transform: uppercase;
     text-decoration: none !important;
     background-color: color(bg, 1);
     color: color(primary, 1) !important;
@@ -27,29 +26,6 @@
 
     &::before {
         border-radius: 2px;
-    }
-}
-
-.button-shadow {
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        box-shadow: 0 8px 24px rgba(color(typography, 1), .12);
-        mix-blend-mode: multiply;
-        transition: box-shadow .15s ease;
-    }
-
-    &:hover {
-
-        &::before {
-            box-shadow: 0 8px 24px rgba(color(typography, 1), .25);
-        }
     }
 }
 
@@ -74,7 +50,6 @@
 
 .button-primary,
 .button-secondary {
-    color: color(typography, 1i) !important;
     transition: background .15s ease;
 }
 
@@ -89,15 +64,23 @@
 }
 
 .button-secondary {
-    background: mix(color(primary, 1), color(secondary, 2));
-    background: linear-gradient(65deg, color(primary, 1) -25%, color(secondary, 2) 100%);
-
-    &:hover {
-        background: lighten(mix(color(primary, 1), color(secondary, 2)), .5%);
-        background: linear-gradient(65deg, lighten(color(primary, 1), .5%) -25%, lighten(color(secondary, 2), .5%) 100%);
-    }
+    margin: 0 auto;
+    background: #fff;
+    color:#191a1b;
+    border: 3px solid #191a1b;
+    display: inline-flex;
+    font-size: 18px;
+    line-height: 16px;
+    border-radius: 6px;
+    height: 60px;
+    text-align: center;
+    padding: 20px 32px;
 }
 
 .button-block {
     display: flex;
+}
+
+.hero .text-light .text-center {
+    padding-bottom: 5rem;
 }
